@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banana_Gest</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/diseno.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+
+    <br>
+
+<div class="container-fluid">   
+    <div class="row" >    
+
+        <div class="etiqueta" style="height: 227px; width: 215px; background-color:rgb(85, 186, 253); border-radius: 18px; padding: 15px; margin:35px;">
+                <div class="container" align="center">
+                        <strong style="font-size:18pt; color:rgb(255, 255, 255)">Add a New Proyect</strong> 
+                </div>
+                    <br>
+                <div class="container" align="center" style="padding:15px">
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModal">+</button>
+                </div>
+        </div>
+      
+
+        <div id="post"> 
+
+
+        </div>
+
+        <div class="col-lg-sm" style="background-color:rgb(85, 186, 253); border-radius: 18px; padding: 15px; margin:35px;">
+          
+                      <div class="container" align="center"> <!--TITULOS ////////////////////////////////////////////// -->
+                          <strong style="font-size:11pt; color:rgb(0, 91, 151)">Proyect Name</strong> 
+                          <h1 style="font-size:11pt; color:rgb(236, 253, 255)">Manager</h1>
+                      </div>
+          
+                      <div class="container" aling="center"> <!-- FECHAS DEL PROYECTO ////////////////////////////////////////////////-->
+                        <div   class="float-left" Style="float:left; padding:1em;">
+                          <p style="font-size:11pt; color:rgb(236, 253, 255)">Star Date</p>
+                        </div>
+                        <div   class="float-right" Style="float:left; padding:1em;">
+                            <p style="font-size:11pt; color:rgb(236, 253, 255)">Final Date</p>
+                        </div>
+                      </div>  
+          
+                        <div class="container" aling="center"> <!--Estatus del Proyecto ///////////////////////////////// -->
+                          <p style="font-size:13pt; color:rgb(43, 46, 226);"><CENTER>Description</CENTER></p>
+                        </div>
+            
+                        <div class="container" aling="center"> <!-- boton para borrar proyecto /////////////////////////////// -->
+                          <button class="btn btn-danger btn-sm post-delete" data-numero="'+ nuevoPost.numero +'" style="float:left">Drop</button>
+                          <button class="btn btn-success btn-sm"  style="float:right">Admin</button>
+                        </div>
+        </div>
+
+     
+
+    </div>
+      
+</div> 
+
+
+
+
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Nuevo Proyecto</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+        
+                  <form class="container" id="needs-validation" novalidate>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom01">Proyect Name</label>
+                        <input type="text" class="form-control" id="tituloProyecto" placeholder="Proyect Name" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom02">Manager</label>
+                        <input type="text" class="form-control" id="nombreEncargado" placeholder="Name" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom03">Description</label>
+                        <textarea class="form-control" id="descripcion" placeholder="Description"required></textarea>                   
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationCustom04">Start Date</label>
+                        <input type="text" class="form-control" id="fechaInicio" placeholder="Start" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid state.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Final Date</label>
+                        <input type="text" class="form-control" id="fechaFinal" placeholder="Final" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid zip.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- <button class="btn btn-primary" type="submit">Submit form</button> -->
+                  </form>
+
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close-post">Close</button>
+                  <button type="button" class="btn btn-primary" id="add-post">Save</button>
+                </div>
+              </div>
+            </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>

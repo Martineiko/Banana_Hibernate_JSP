@@ -1,0 +1,41 @@
+body{
+    background-color: rgba(148, 202, 255, 0.87);
+    background-image: url(../img/body/win7.jpg);
+	background-size: cover;
+}
+
+
+
+.buttons{
+	float: left;
+}
+
+.title1{
+	font-size:18pt; 
+	color:white;
+}
+
+.title2{
+	font-size:11pt; 
+	color:rgb(0, 91, 151)
+}
+
+
+.title3	{
+	font-size:18pt; 
+	color:white;
+	float: left;
+	width: 50%;
+}
+
+.title4{
+	color:white;
+	font-size:11pt; 
+}
+
+.title5	{
+	font-size:18pt; 
+	color:white;
+	float: left;
+	width: 100%;
+}
